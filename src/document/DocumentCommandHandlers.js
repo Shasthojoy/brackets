@@ -1723,7 +1723,7 @@ define(function (require, exports, module) {
      * Attach a beforeunload handler to notify user about unsaved changes and URL redirection in CEF. 
      * Prevents data loss in scenario reported under #13708
     **/
-    window.onbeforeunload = function(e) {
+    /*window.onbeforeunload = function(e) {
         var openDocs = DocumentManager.getAllOpenDocuments();
         
         // Detect any unsaved changes
@@ -1739,7 +1739,7 @@ define(function (require, exports, module) {
                 return Strings.WINDOW_UNLOAD_WARNING;
             }
         }
-    };
+    };*/
  
     /** Do some initialization when the DOM is ready **/
     AppInit.htmlReady(function () {
